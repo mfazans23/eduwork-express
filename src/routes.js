@@ -10,9 +10,9 @@ router.get('/', (req, res) => {
   res.send(`<h2>Endpoints:</h2>
               <ul>
                 <li>GET /user  --> (Get all users)</li>
-                <li>GET /user/:id  --> (Get user by id)</li>
+                <li>GET /user/:userId  --> (Get user by id)</li>
                 <li>GET /product  --> (Get all products)</li>
-                <li>GET /product  --> (Get product by id)</li>
+                <li>GET /product/:productId  --> (Get product by id)</li>
               </ul>`)
 })
 
