@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "type": "module",
   "scripts": {
-    "server": "nodemon server"
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src",
+    "server": "nodemon src/api"
   },
   "author": "Muhammad Faza",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.1.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
